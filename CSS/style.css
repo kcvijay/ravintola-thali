@@ -1,0 +1,398 @@
+/* UNIVERSAL MENU-SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  background-color: aliceblue;
+}
+
+.logo > a {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  color: #800080;
+}
+
+.logo > a:hover,
+.logo > a:active {
+  color: #999;
+}
+
+.nav-menu > ul > li {
+  display: inline-block;
+}
+
+.nav-menu > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 3.2rem;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.nav-menu > ul > li > a:hover {
+  color: #000;
+}
+
+.icon-cart {
+  width: 3rem;
+}
+
+/***HERO-FIELD***/
+
+.section-hero {
+  background-image: linear-gradient(
+      to left,
+      rgba(57, 21, 104, 0.255),
+      rgba(75, 4, 104, 0.181)
+    ),
+    url("../MEDIA/hero-img-thali.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-container {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-text {
+  margin-left: 8rem;
+  line-height: 8rem;
+}
+
+.hero-header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-sub-header {
+  font-size: 3.2rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  background-color: #800080;
+  border: 3px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-secondary {
+  background-color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #800080;
+  font-family: inherit;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 2rem;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(84, 1, 84);
+}
+
+.section-todays-special {
+  background-color: #f2e6f2;
+}
+
+.section-header {
+  font-size: 4rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: #333;
+  padding-top: 5rem;
+}
+
+.todays-special-container {
+  max-width: 130rem;
+  margin: 0rem auto;
+  padding: 3rem 0 8rem 0;
+}
+
+.item-field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  transition: 0.3s ease;
+  border: 3px solid #fff;
+}
+
+.item-field:hover {
+  box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.1);
+}
+
+.item-detail {
+  padding: 2rem;
+  line-height: 1.5;
+}
+
+.dish-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.dish-detail {
+  font-size: 1.6rem;
+}
+
+.item-field > .item-img-1 {
+  background-image: url("../MEDIA/chicken-curry.jpg");
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-field > .item-img-2 {
+  background-image: url("../MEDIA/chicken-biryani.jpg");
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.item-field > .item-img-3 {
+  background-image: url("../MEDIA/fried-rice.jpg");
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.check-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #333;
+  transition: 0.6s ease;
+}
+
+.check-menu:hover {
+  transform: translateX(20px);
+}
+
+.check-menu:hover .icon-right {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.icon-right {
+  width: 2rem;
+  margin-left: 1rem;
+  transition: 0.6s ease;
+}
+
+/******FEATURE SECTION*****/
+
+.features-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 10rem 0;
+}
+
+.feature-box {
+  padding: 3rem;
+  text-align: justify;
+  color: #555;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
+  transition: 0.5s ease;
+}
+
+.feature-box:hover {
+  box-shadow: none;
+}
+
+.feature-box.middle {
+  background-color: #f2e6f2;
+  box-shadow: none;
+}
+
+.icon {
+  width: 5rem;
+  opacity: 0.5;
+}
+
+.feature-head {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.feature-detail {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+}
+
+.section-form {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(128, 128, 128, 0.5)
+    ),
+    url("../MEDIA/spice-image.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 55vh;
+}
+
+.form-container {
+  width: 33%;
+  height: 40vh;
+  margin: auto;
+  height: 90vh;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.form-header {
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(10rem, 1fr));
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+label,
+input {
+  display: block;
+  font-size: 1.6rem;
+  font-family: inherit;
+  opacity: 0.9;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+
+input {
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.6rem;
+}
+
+textarea {
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  height: 10rem;
+  width: 100%;
+  opacity: 0.9;
+  margin-bottom: 1.6rem;
+  border-radius: 5px;
+}
+
+.message {
+  grid-column: 1 / 3;
+  width: 100%;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-between;
+  align-items: stretch;
+  width: 130rem;
+  margin: 5rem auto;
+}
+
+.contact-field {
+  justify-self: center;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.contact-header {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 3rem;
+  margin-right: 1rem;
+  filter: grayscale(2);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.social-icons img:hover,
+.social-icons img:active {
+  filter: brightness(0.5);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

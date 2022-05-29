@@ -1,0 +1,201 @@
+/* UNIVERSAL MENU-SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  background-color: aliceblue;
+}
+
+.logo > a {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  color: #800080;
+}
+
+.logo > a:hover,
+.logo > a:active {
+  color: #999;
+}
+
+.nav-menu > ul > li {
+  display: inline-block;
+}
+
+.nav-menu > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 3.2rem;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.nav-menu > ul > li > a:hover {
+  color: #000;
+}
+
+/***HERO-FIELD***/
+
+.section-hero {
+  background-image: linear-gradient(
+      to left,
+      rgba(57, 21, 104, 0.255),
+      rgba(75, 4, 104, 0.181)
+    ),
+    url("../MEDIA/hero-img-thali.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-container {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-text {
+  margin-left: 8rem;
+  line-height: 8rem;
+}
+
+.hero-header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-sub-header {
+  font-size: 3.2rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  background-color: #800080;
+  border: 3px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(84, 1, 84);
+}
+
+/****MAIN SECTION***/
+
+.our-story {
+  background-color: #f2e6f2;
+}
+
+.our-story-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  width: 130rem;
+  margin: 0 auto;
+  color: #333;
+  padding: 7rem 0;
+}
+
+.story-item {
+  padding: 3rem;
+}
+
+.story-item-header {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.story-item p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.story-item img {
+  width: 40rem;
+  border-radius: 7px;
+}
+
+.story-item.restaurant-img {
+  justify-self: flex-end;
+}
+/*******************/
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-between;
+  align-items: stretch;
+  width: 130rem;
+  margin: 5rem auto;
+}
+
+.contact-field {
+  justify-self: center;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.contact-header {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 3rem;
+  margin-right: 1rem;
+  filter: grayscale(2);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.social-icons img:hover,
+.social-icons img:active {
+  filter: brightness(0.5);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

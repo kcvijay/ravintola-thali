@@ -1,0 +1,256 @@
+/* UNIVERSAL MENU-SECTION */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  background-color: aliceblue;
+}
+
+.logo > a {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+  color: #800080;
+}
+
+.logo > a:hover,
+.logo > a:active {
+  color: #999;
+}
+
+.nav-menu > ul > li {
+  display: inline-block;
+}
+
+.nav-menu > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 3.2rem;
+  font-size: 1.8rem;
+  color: #555;
+  font-weight: 600;
+}
+
+.nav-menu > ul > li > a:hover {
+  color: #000;
+}
+
+/***HERO-FIELD***/
+
+.section-hero {
+  background-image: linear-gradient(
+      to left,
+      rgba(57, 21, 104, 0.255),
+      rgba(75, 4, 104, 0.181)
+    ),
+    url("../MEDIA/hero-img-thali.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 50vh;
+  position: relative;
+}
+
+.hero-container {
+  color: #fff;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+}
+
+.hero-text {
+  margin-left: 8rem;
+  line-height: 8rem;
+}
+
+.hero-header {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.hero-sub-header {
+  font-size: 3.2rem;
+  color: #fff;
+  letter-spacing: 1.5px;
+}
+
+.btn {
+  background-color: #800080;
+  border: 3px solid #fff;
+  padding: 1rem 2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: inherit;
+  text-transform: uppercase;
+  border-radius: 7px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: rgb(84, 1, 84);
+}
+
+/****MAIN SECTION***/
+
+.section-menu {
+  background-color: #f2e6f2;
+}
+
+.menu-container {
+  width: 130rem;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.menu-field {
+  margin-bottom: 4rem;
+}
+
+.menu-list-field {
+  background-color: #fff;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  flex-wrap: nowrap;
+}
+
+.menu-list-field:hover {
+  box-shadow: none;
+}
+
+.day-name {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.menu-nro {
+  font-size: 8rem;
+  margin-left: 1rem;
+  color: #80008083;
+  font-weight: 700;
+}
+
+.menu-item {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  line-height: 2;
+}
+
+.menu-header {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.lunch-price-field {
+  font-size: 1.8rem;
+  background-color: rgb(23, 23, 23);
+  color: #fff;
+  align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 5rem;
+}
+
+.daily-buttons {
+  background-color: #f2e6f2;
+  padding: 2.5rem 3rem;
+  margin: 0 auto;
+  display: flex;
+  column-gap: 1px;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.daily-buttons button {
+  background-image: linear-gradient(to left, #800080b0, #640164c0);
+  color: #fff;
+  font-family: inherit;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.daily-buttons button:hover {
+  background-color: #640164;
+}
+
+/*******************/
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  justify-content: space-between;
+  align-items: stretch;
+  width: 130rem;
+  margin: 5rem auto;
+}
+
+.contact-field {
+  justify-self: center;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.contact-header {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons img {
+  width: 3rem;
+  margin-right: 1rem;
+  filter: grayscale(2);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.social-icons img:hover,
+.social-icons img:active {
+  filter: brightness(0.5);
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
